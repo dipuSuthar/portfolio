@@ -1,9 +1,10 @@
+import Ananta from "../assests/images/anantaservices_logo.jpg";
 export default function WorkExperience() {
   const experience = {
     company: "Ananta Services",
     title: "Front-End Developer",
     duration: "Jan 2023 – Present",
-    logo: "./anantaservices_logo.jpg", // place this in /public/icons/
+    logo: Ananta, // place this in /public/icons/
     color: "bg-red-600",
     description:
       "Ananta Services is dedicated to provide top quality candidates in the Software, and IT arenas, which includes a larger pool from testers to developer to upper management",

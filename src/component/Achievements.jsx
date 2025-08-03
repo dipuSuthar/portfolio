@@ -1,7 +1,9 @@
+import Udemy from "../assests/images/udemy.png";
+
 const achievementsData = [
   {
     title: "Full-Stack Web Developer",
-    image: "./udemy.png",
+    image: Udemy,
     description: " The Complete 2024 Web Development Bootcamp",
     instructor: " Dr.Angela Yu",
     links: [{ label: "Certification" }],

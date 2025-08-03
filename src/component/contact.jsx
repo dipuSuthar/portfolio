@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="min-h-screen  text-white px-6 py-1 flex flex-col items-center justify-center"
+      className="min-h-screen  text-white px-6  flex flex-col items-center justify-center"
     >
       <h2 className="text-4xl font-bold mb-6">Contact Me</h2>
       <p className="text-lg mb-8 text-center max-w-xl">

@@ -5,7 +5,7 @@ import { Link as ScrollLink } from "react-scroll";
 export default function Navbar() {
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-transparent dark:text-white">
-      <div className="text-3xl font-bold font-logo">{"< Dilhar />"}</div>
+      <div className="text-3xl font-bold font-logo">{"< Dilip Suthar />"}</div>
 
       <ul className="hidden md:flex gap-6 text-lg">
         {[

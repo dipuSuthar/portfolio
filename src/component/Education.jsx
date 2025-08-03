@@ -1,23 +1,24 @@
 import { useEffect, useRef, useState } from "react";
-
+import parul from "../assests/images/parul-university.png";
+import Kjit from "../assests/images/kjit.png";
 const educationData = [
   {
     university: "Parul University",
     degree: "Master of Computer Application(MCA)",
     duration: "September 2021 - june 2023",
-    logo: "./parul-university.png",
+    logo: parul,
   },
   {
     university: "K J Institute of Engineering & Technology",
     degree: "Bachelor of Computer Application(BCA)",
     duration: "September 2018 - April 2021",
-    logo: "./kjit.png",
+    logo: Kjit,
   },
 ];
 
 export default function EducationSection() {
   return (
-    <section id="education" className=" text-white py-20 px-6">
+    <section id="education" className=" text-white  px-6">
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold mb-12 border-l-4 border-purple-500 pl-4">
           Education

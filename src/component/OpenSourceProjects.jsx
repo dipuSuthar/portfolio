@@ -31,7 +31,7 @@ const projects = [
 export default function OpenSourceProjects() {
   return (
     <>
-      <section id="projects" className="text-white py-20 px-6 ">
+      <section id="projects" className="text-white  px-6 ">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 border-l-4 border-purple-500 pl-4">
             Open Source Projects
