@@ -1,29 +1,8 @@
 // src/components/Navbar.jsx
-import { useEffect, useState } from "react";
+
 import { Link as ScrollLink } from "react-scroll";
-import { FaMoon, FaSun } from "react-icons/fa";
 
 export default function Navbar() {
-  const [theme, setTheme] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("theme") || "light";
-    }
-    return "light";
-  });
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-    localStorage.setItem("theme", theme);
-  }, [theme]);
-
-  const toggleTheme = () => {
-    setTheme((prev) => (prev === "dark" ? "light" : "dark"));
-  };
-
   return (
     <nav className="flex justify-between items-center px-6 py-4 bg-transparent dark:text-white">
       <div className="text-3xl font-bold font-logo">{"< Dilhar />"}</div>

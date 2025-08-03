@@ -10,12 +10,9 @@ const achievementsData = [
 
 export default function Achievements() {
   return (
-    <section
-      id="achievements"
-      className="bg-white text-black dark:bg-gray-900 dark:text-white py-20 px-6 transition-colors duration-300"
-    >
+    <section id="achievements" className=" text-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 border-l-4 border-purple-500 pl-4 dark:border-purple-400">
+        <h2 className="text-4xl font-bold mb-12 border-l-4 border-purple-500 pl-4">
           Achievements & Certifications 🏆
         </h2>
 
