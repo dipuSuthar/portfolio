@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Light Theme */
+:root {
+    --bg-color: #ffffff;
+    --text-color: #0f172a;
+    --card-bg: #f1f5f9;
+    --accent-color: #7c3aed;
+    /* Purple-600 */
+}
+
+/* Dark Theme */
+.dark {
+    --bg-color: #0f172a;
+    --text-color: #ffffff;
+    --card-bg: #1e293b;
+    --accent-color: #a78bfa;
+    /* Purple-400 */
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+}
