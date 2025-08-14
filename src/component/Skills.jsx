@@ -4,10 +4,20 @@ import {
   FaSass,
   FaJsSquare,
   FaReact,
-  FaNodeJs,
   FaNpm,
+  FaGitAlt,
+  FaGithub,
 } from "react-icons/fa";
-import { SiNextdotjs, SiExpress, SiSocketdotio } from "react-icons/si";
+import {
+  SiMui,
+  SiTailwindcss,
+  SiNextdotjs,
+  SiRedux,
+  SiVite,
+  SiWebpack,
+  SiPrettier,
+} from "react-icons/si";
+import { FaDog } from "react-icons/fa";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const skills = [
@@ -37,23 +47,46 @@ export default function Skills() {
           {/* Right Content */}
           <div className="w-full md:w-1/2">
             <h3 className="text-3xl font-semibold mb-4">What I Do</h3>
-            <p className="text-lg font-medium mb-6">
+            {/* <p className="text-lg font-medium mb-6">
               CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
+            </p> */}
+            <p className="text-lg font-medium mb-6">
+              Passionate Front-End Developer who loves crafting interactive,
+              responsive, and user-friendly web applications.
             </p>
 
             {/* Skills Icons */}
             <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 mb-8 text-white text-4xl">
               {[
+                // Core
                 { icon: <FaHtml5 />, name: "HTML5" },
                 { icon: <FaCss3Alt />, name: "CSS3" },
                 { icon: <FaSass />, name: "Sass" },
+                { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+                { icon: <SiMui />, name: "Material UI" },
+
+                // Languages
                 { icon: <FaJsSquare />, name: "JavaScript" },
-                { icon: <FaReact />, name: "ReactJS" },
+                // { icon: <SiTypescript />, name: "TypeScript" },
+
+                // Frameworks
+                { icon: <FaReact />, name: "React.js" },
                 { icon: <SiNextdotjs />, name: "Next.js" },
-                { icon: <FaNodeJs />, name: "Node.js" },
-                { icon: <SiExpress />, name: "Express.js" },
-                { icon: <SiSocketdotio />, name: "Socket.IO" },
+                { icon: <SiRedux />, name: "Redux" },
+
+                // Build Tools
                 { icon: <FaNpm />, name: "NPM" },
+                // { icon: <SiYarn />, name: "Yarn" },
+                { icon: <SiVite />, name: "Vite" },
+                { icon: <SiWebpack />, name: "Webpack" },
+
+                // Version Control
+                { icon: <FaGitAlt />, name: "Git" },
+                { icon: <FaGithub />, name: "GitHub" },
+
+                // Code Quality
+                { icon: <SiPrettier />, name: "Prettier" },
+                { icon: <FaDog />, name: "Husky" },
               ].map(({ icon, name }, idx) => (
                 <div
                   key={idx}
@@ -70,17 +103,34 @@ export default function Skills() {
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Build responsive, interactive UIs using React & Next.js
+                  Design pixel-perfect, accessible UIs that work across all
+                  devices
                 </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 text-xl">⚡</span>
-                <span>Develop fast, offline-capable PWAs</span>
+                <span>
+                  Bring designs to life with smooth animations and
+                  micro-interactions
+                </span>
               </li>
               <li className="flex items-start gap-2">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Integrate APIs and WebSocket-based real-time features
+                  Leverage modern tools like Tailwind CSS, Sass, and Material-UI
+                  for rapid styling
+                </span>
+              </li>
+              {/* <li className="flex items-start gap-2">
+                <span className="text-yellow-400 text-xl">⚡</span>
+                <span>
+                  Implement SEO-friendly, blazing-fast pages with Next.js
+                </span>
+              </li> */}
+              <li className="flex items-start gap-2">
+                <span className="text-yellow-400 text-xl">⚡</span>
+                <span>
+                  Ensure consistent design with reusable and modular components
                 </span>
               </li>
             </ul>
