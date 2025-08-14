@@ -13,9 +13,9 @@ export default function Hero() {
           </p>
 
           <h3 className="text-4xl text-gray-300">
-            A passionate Full Stack Software Developer 🚀 with experience in
-            building dynamic and scalable web applications using JavaScript,
-            React.js, Node.js, and other modern libraries and frameworks.
+            A passionateFront-End Developer 🎨 with experience in building
+            dynamic and scalable web applications using JavaScript, React.js,
+            Next.js, and other modern libraries and frameworks.
           </h3>
 
           {/* Social Icons */}
