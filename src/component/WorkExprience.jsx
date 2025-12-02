@@ -3,7 +3,7 @@ export default function WorkExperience() {
   const experience = {
     company: "Ananta Services",
     title: "Front-End Developer",
-    duration: "Jan 2023 – Present",
+    duration: "Jan 2023 – Aug 2025",
     logo: Ananta, // place this in /public/icons/
     color: "bg-red-600",
     description:
