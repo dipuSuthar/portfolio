@@ -13,7 +13,7 @@ export default function Hero() {
           </p>
 
           <h3 className="text-4xl text-gray-300">
-            A passionateFront-End Developer 🎨 with experience in building
+            A passionate Front-End Developer 🎨 with experience in building
             dynamic and scalable web applications using JavaScript, React.js,
             Next.js, and other modern libraries and frameworks.
           </h3>
@@ -42,7 +42,7 @@ export default function Hero() {
                 CONTACT ME
               </ScrollLink>
             </button>
-            <a href="./files/Resume-2025.pdf" download>
+            <a href="./files/Resume.pdf" download>
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md font-semibold">
                 DOWNLOAD MY RESUME
               </button>
