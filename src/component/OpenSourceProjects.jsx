@@ -11,7 +11,7 @@ const projects = [
     ],
     lang: ["HTML", "CSS", "JavaScript", "Tailwind CSS", "React"],
     link: "https://madebydilip.vercel.app", // replace with your actual portfolio link
-    code: "https://talk-client.vercel.app",
+    code: "https://github.com/dipuSuthar/portfolio",
   },
   {
     name: "Talk",
@@ -79,7 +79,7 @@ export default function OpenSourceProjects() {
               )}
               {proj.code && (
                 <a
-                  href={proj.link}
+                  href={proj.code}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-block mt-4 ml-1 text-sm bg-purple-600 hover:bg-purple-700 text-white px-4 py-2 rounded-md transition duration-300"

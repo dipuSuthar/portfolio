@@ -1,5 +1,5 @@
 // src/components/Hero.jsx
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 export default function Hero() {
@@ -28,8 +28,16 @@ export default function Hero() {
             >
               <FaLinkedin className="text-white text-xl" />
             </a>
+            <a
+              href="https://github.com/dipuSuthar"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#010306] hover:bg-[#938f8f] p-3 rounded-full transition-colors duration-300"
+            >
+              <FaGithub className="text-white text-xl" />
+            </a>
           </div>
-
+          {/* <div className="flex items-center gap-4 text-2xl mt-4"></div> */}
           {/* Buttons */}
           <div className="flex gap-4 pt-6" id="resume">
             <button className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-md font-semibold">

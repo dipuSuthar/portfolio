@@ -1,6 +1,6 @@
 // src/pages/Contact.jsx or src/components/Contact.jsx
 import React from "react";
-import { FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { FaLinkedin, FaEnvelope, FaGithub } from "react-icons/fa";
 
 export default function Contact() {
   return (
@@ -31,6 +31,14 @@ export default function Contact() {
           className="bg-[#df3939] p-4 rounded-full hover:bg-black transition duration-300"
         >
           <FaEnvelope className="text-white text-2xl hover:text-indigo-400" />
+        </a>
+        <a
+          href="https://github.com/dipuSuthar"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#2e2e2e] p-4 rounded-full hover:bg-black transition duration-300"
+        >
+          <FaGithub className="text-white text-2xl hover:text-indigo-400" />
         </a>
       </div>
     </section>
