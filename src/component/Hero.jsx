@@ -56,7 +56,7 @@ export default function Hero() {
                 CONTACT ME
               </ScrollLink>
             </button>
-            <a href="./files/Resume.pdf" download>
+            <a href="./files/DilipSuthar.pdf" download>
               <button className="bg-purple-600 hover:bg-purple-700 text-white px-6 py-3 rounded-md font-semibold">
                 DOWNLOAD MY RESUME
               </button>
