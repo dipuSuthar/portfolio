@@ -1,7 +1,13 @@
 // src/components/Hero.jsx
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { Link as ScrollLink } from "react-scroll";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+import { lazy, Suspense } from "react";
+
+const DotLottieReact = lazy(() =>
+  import("@lottiefiles/dotlottie-react").then((module) => ({
+    default: module.DotLottieReact,
+  })),
+);
 export default function Hero() {
   return (
     <section id="hero" className=" text-white px-6 py-5 md:py-20">
@@ -21,7 +27,7 @@ export default function Hero() {
           {/* Social Icons */}
           <div className="flex items-center gap-4 text-2xl mt-4">
             <a
-              href="https://www.linkedin.com/in/dilip-suthar-124b9a235?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              href="https://www.linkedin.com/in/dilip-suthar-124b9a235"
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#155cb3] hover:bg-[#1a1a1a] p-3 rounded-full transition-colors duration-300"
@@ -59,14 +65,16 @@ export default function Hero() {
         </div>
 
         {/* RIGHT: Animation/Image */}
-        <div className="md:w-1/2 w-full flex justify-center mt-0 object-fill">
-          <DotLottieReact
-            src="https://lottie.host/9f79135e-2978-43ca-9d92-e3bb3ff197ed/c4M3oT8zv7.lottie"
-            loop
-            autoplay
-            style={{ width: 500, height: 500 }}
-          />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <div className=" hidden md:flex md:w-1/2 w-full  justify-center mt-0 object-fill">
+            <DotLottieReact
+              src="https://lottie.host/abdb01c1-e398-4977-b2b8-ea186c35c3b9/JUZm3hxuXh.lottie"
+              loop
+              autoplay
+              style={{ width: 500, height: 500 }}
+            />
+          </div>
+        </Suspense>
       </div>
     </section>
   );
