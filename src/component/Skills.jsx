@@ -4,164 +4,181 @@ import {
   FaSass,
   FaJsSquare,
   FaReact,
-  FaNpm,
   FaGitAlt,
   FaGithub,
 } from "react-icons/fa";
+
 import {
-  SiMui,
   SiTailwindcss,
+  SiMui,
+  SiTypescript,
   SiNextdotjs,
   SiRedux,
-  SiVite,
+  SiReactquery,
   SiWebpack,
+  SiVite,
   SiPrettier,
+  SiEslint,
+  SiAxios,
+  SiVercel,
+  SiFramer,
+  SiReactrouter,
 } from "react-icons/si";
-import { FaDog } from "react-icons/fa";
+
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
-const skills = [
-  { title: "Frontend/Design", percent: 90 },
-  { title: "Backend", percent: 60 },
-  { title: "Programming", percent: 70 },
+const skillCategories = [
+  {
+    title: "Frontend",
+    skills: [
+      { icon: <FaHtml5 />, name: "HTML5" },
+      { icon: <FaCss3Alt />, name: "CSS3" },
+      { icon: <FaJsSquare />, name: "JavaScript" },
+      { icon: <SiTypescript />, name: "TypeScript" },
+      { icon: <FaReact />, name: "React.js" },
+      { icon: <SiNextdotjs />, name: "Next.js" },
+      { icon: <SiReactrouter />, name: "React Router" },
+    ],
+  },
+
+  {
+    title: "Styling & UI",
+    skills: [
+      { icon: <FaSass />, name: "Sass" },
+      { icon: <SiTailwindcss />, name: "Tailwind CSS" },
+      { icon: <SiMui />, name: "Material UI" },
+      { icon: <SiFramer />, name: "Framer Motion" },
+    ],
+  },
+
+  {
+    title: "State Management & APIs",
+    skills: [
+      { icon: <SiRedux />, name: "Redux" },
+      { icon: <SiReactquery />, name: "React Query" },
+      { icon: <SiAxios />, name: "Axios" },
+    ],
+  },
+
+  {
+    title: "Tools & Workflow",
+    skills: [
+      { icon: <SiWebpack />, name: "Webpack" },
+      { icon: <SiVite />, name: "Vite" },
+      { icon: <FaGitAlt />, name: "Git" },
+      { icon: <FaGithub />, name: "GitHub" },
+      { icon: <SiPrettier />, name: "Prettier" },
+      { icon: <SiEslint />, name: "ESLint" },
+      { icon: <SiVercel />, name: "Vercel" },
+    ],
+  },
 ];
 
 export default function Skills() {
   return (
     <section id="skills" className="py-20 px-6 text-white">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-4xl font-bold mb-12 border-l-4 border-purple-500 pl-4">
-          Skills
+        {/* Heading */}
+        <h2 className="text-4xl font-bold mb-14 border-l-4 border-purple-500 pl-4">
+          Skills & Technologies
         </h2>
 
-        <div className="flex flex-col md:flex-row items-center gap-12 mb-16">
-          {/* Left Lottie Animation */}
-          <div className="w-full md:w-1/2">
+        {/* Top Section */}
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-20">
+          {/* Lottie */}
+          <div className="w-full md:w-1/2 flex justify-center items-center">
             <DotLottieReact
               src="https://lottie.host/79c17ad3-382e-4779-b8c6-33ddc74e90ab/uX1BlZ6ZOf.lottie"
               loop
               autoplay
+              className="w-full max-w-[450px] h-auto"
             />
           </div>
 
-          {/* Right Content */}
+          {/* Content */}
           <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold mb-4">What I Do</h3>
-            {/* <p className="text-lg font-medium mb-6">
-              CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK
-            </p> */}
-            <p className="text-lg font-medium mb-6">
-              Passionate Front-End Developer who loves crafting interactive,
-              responsive, and user-friendly web applications.
+            <h3 className="text-3xl font-semibold mb-5">Frontend Developer</h3>
+
+            <p className="text-lg text-gray-300 leading-relaxed mb-8">
+              Passionate frontend developer focused on building responsive,
+              interactive, and performance-optimized web applications using
+              modern React ecosystem tools and UI technologies.
             </p>
 
-            {/* Skills Icons */}
-            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-6 mb-8 text-white text-4xl">
-              {[
-                // Core
-                { icon: <FaHtml5 />, name: "HTML5" },
-                { icon: <FaCss3Alt />, name: "CSS3" },
-                { icon: <FaSass />, name: "Sass" },
-                { icon: <SiTailwindcss />, name: "Tailwind CSS" },
-                { icon: <SiMui />, name: "Material UI" },
-
-                // Languages
-                { icon: <FaJsSquare />, name: "JavaScript" },
-                // { icon: <SiTypescript />, name: "TypeScript" },
-
-                // Frameworks
-                { icon: <FaReact />, name: "React.js" },
-                { icon: <SiNextdotjs />, name: "Next.js" },
-                { icon: <SiRedux />, name: "Redux" },
-
-                // Build Tools
-                { icon: <FaNpm />, name: "NPM" },
-                // { icon: <SiYarn />, name: "Yarn" },
-                { icon: <SiVite />, name: "Vite" },
-                { icon: <SiWebpack />, name: "Webpack" },
-
-                // Version Control
-                { icon: <FaGitAlt />, name: "Git" },
-                { icon: <FaGithub />, name: "GitHub" },
-
-                // Code Quality
-                { icon: <SiPrettier />, name: "Prettier" },
-                { icon: <FaDog />, name: "Husky" },
-              ].map(({ icon, name }, idx) => (
-                <div
-                  key={idx}
-                  className="flex flex-col items-center justify-center text-sm text-gray-300 hover:text-indigo-400 transition-transform duration-300 hover:scale-110"
-                >
-                  {icon}
-                  <span className="mt-2">{name}</span>
-                </div>
-              ))}
-            </div>
-
-            {/* Bullet Points */}
-            <ul className="space-y-4 text-base">
-              <li className="flex items-start gap-2">
+            {/* Highlights */}
+            <ul className="space-y-5 text-base text-gray-300">
+              <li className="flex items-start gap-3">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Design pixel-perfect, accessible UIs that work across all
+                  Build responsive and accessible user interfaces across all
                   devices
                 </span>
               </li>
-              <li className="flex items-start gap-2">
+
+              <li className="flex items-start gap-3">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Bring designs to life with smooth animations and
-                  micro-interactions
+                  Create smooth animations and interactive experiences using
+                  modern frontend tools
                 </span>
               </li>
-              <li className="flex items-start gap-2">
+
+              <li className="flex items-start gap-3">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Leverage modern tools like Tailwind CSS, Sass, and Material-UI
-                  for rapid styling
+                  Integrate APIs and manage application state efficiently using
+                  Redux and React Query
                 </span>
               </li>
-              {/* <li className="flex items-start gap-2">
+
+              <li className="flex items-start gap-3">
                 <span className="text-yellow-400 text-xl">⚡</span>
                 <span>
-                  Implement SEO-friendly, blazing-fast pages with Next.js
-                </span>
-              </li> */}
-              <li className="flex items-start gap-2">
-                <span className="text-yellow-400 text-xl">⚡</span>
-                <span>
-                  Ensure consistent design with reusable and modular components
+                  Optimize frontend performance using lazy loading, asset
+                  optimization, and efficient rendering techniques
                 </span>
               </li>
             </ul>
           </div>
         </div>
 
-        {/* Proficiency Section */}
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          <div className="w-full md:w-1/2">
-            <h3 className="text-3xl font-semibold mb-8">Proficiency</h3>
-            {skills.map((skill, idx) => (
-              <div key={idx} className="mb-6">
-                <p className="mb-2">{skill.title}</p>
-                <div className="w-full h-4 bg-white/20 rounded-full">
-                  <div
-                    className="h-full bg-purple-500 rounded-full transition-all duration-700"
-                    style={{ width: `${skill.percent}%` }}
-                  ></div>
-                </div>
-              </div>
-            ))}
-          </div>
+        {/* Skills Categories */}
+        <div className="space-y-14">
+          {skillCategories.map((category, index) => (
+            <div key={index}>
+              <h3 className="text-2xl font-semibold mb-8 text-purple-400">
+                {category.title}
+              </h3>
 
-          <div className="w-full md:w-1/2 flex justify-center">
+              <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-6 gap-8">
+                {category.skills.map(({ icon, name }, idx) => (
+                  <div
+                    key={idx}
+                    className="group flex flex-col items-center justify-center text-sm text-gray-300 hover:text-indigo-400 transition-all duration-300 hover:scale-110"
+                  >
+                    <div className="text-5xl drop-shadow-lg group-hover:drop-shadow-[0_0_12px_rgba(99,102,241,0.8)]">
+                      {icon}
+                    </div>
+
+                    <span className="mt-3 text-center">{name}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Bottom Animation */}
+        {/* <div className="flex justify-center mt-24">
+          <div className="w-full max-w-md">
             <DotLottieReact
               src="https://lottie.host/001d5d46-cb37-479b-aafd-9fa84d553c0f/BWdL6MwWf1.lottie"
               loop
               autoplay
+              className="w-full h-auto"
             />
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );
