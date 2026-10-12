@@ -26,7 +26,7 @@ const projects = [
       "Designed with a responsive chat UI and scalable backend to handle concurrent users",
     ],
     lang: ["MongoDB", "Express.js", "React", "Node.js", "Socket.IO"],
-    link: "https://talk-client.vercel.app", // replace with your GitHub or demo link
+    link: "https://devops-front-end.vercel.app", // replace with your GitHub or demo link
   },
   {
     name: "Video Timeline",
